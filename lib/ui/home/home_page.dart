@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:valorant_api_example/services/models/valorant_model.dart';
 import 'package:valorant_api_example/services/network/api.dart';
+import 'package:valorant_api_example/ui/home/widgets/state_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -29,7 +30,8 @@ class _HomePageState extends State<HomePage> {
 
             return Column(
               children: [
-                
+                StateeWidget(),
+
                 Expanded(
                   child: GridView.builder(
                     gridDelegate:
